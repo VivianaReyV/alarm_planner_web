@@ -1,0 +1,37 @@
+<div class="row" id="row_1">
+    <div class="col-back">
+        <img class="back" src="assets/images/back.png" [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active">
+    </div>
+    <div class="col-titulo">
+        <p class="categorias_titulo">Editar: Nombre categoría</p>
+    </div>
+  </div>
+  <div class="linea_xl"></div>
+  <div class="container-fluid">
+    <div class="row" id="row_2">
+        <div class="col_form">
+            <div class="container" id="nueva_tarea_form">
+                <div class="row justify-content-center">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+                </div>
+                <div class="row justify-content-center">
+                    <input type="text" class="form-control" placeholder="Descripción" aria-label="Descripcion" aria-describedby="basic-addon1">
+                </div>
+                <div class="row justify-content-center">
+                    <img class="image" src="assets/images/image.png">
+                </div>
+                <div class="row justify-content-center">
+                    <button class="btn crear_btn" [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active">Listo</button>
+                </div>
+            </div>
+        </div>
+      <div class="col_calendario">
+        <mat-card class="demo-inline-calendar-card">
+          <mat-calendar [headerComponent]="exampleHeader" [(selected)]="selected"></mat-calendar>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+
+  

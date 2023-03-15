@@ -1,0 +1,73 @@
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #B0E0E6;
+    height: 100%;
+}
+
+.clock_image {
+    width: 100%;
+    height: 94vh;
+}
+
+.row_banner {
+    margin-top: -30px;
+    width: 100%;
+    height: 10%;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.user, .lock {
+    width: 30px;
+    height: 30px;
+}
+
+.input-group-text {
+    background-color: white;
+    border-radius: 0%;
+    border: 0;
+}
+
+.form-control {
+    border-radius: 0%;
+    border: 0;
+}
+
+.input-group {
+    background-color: white;
+    border: 1px solid;
+    border-color: #AC202D;
+    width: 60%;
+    margin-top: 5%;
+    height: 45px;
+}
+
+#log_in_form {
+    margin-top: 25%;
+}
+
+.col_image {
+    width: 60%;
+}
+
+.col_form {
+    width: 40%;
+}
+
+.ingresar_btn {
+    background-color: #DD8AA5;
+    width: 25%;
+    margin-top: 12%;
+}
+
+.registrar_btn {
+    border: 1px solid;
+    border-color: #F06489;
+    width: 25%;
+    margin-top: 3%;
+}

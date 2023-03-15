@@ -1,0 +1,119 @@
+#row_1 {
+    background-color: #B0E0E6;
+    height: 10%;
+    border-bottom: 1px solid;
+    border-color: black;
+}
+
+.menu_icon {
+    margin: 10px;
+}
+
+.nombre_app {
+    height: 75%;
+    width: 10%;
+    display: inline-block;
+    margin: 8px;
+}
+
+.dropdown {
+    width: 8%;
+}
+
+ul {
+    border-radius: 0%;
+    width: 150%;
+}
+
+a {
+    align-items: end;
+}
+
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    max-width: 250px;
+}
+
+.linea_xl {
+    border-top: 1px solid black;
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#row_2 {
+    margin: 30px 0px 0px 20px;
+    align-items: flex-end;
+}
+
+.col-add {
+    width: 5%;
+}
+.col-add-text {
+    width: 95%;
+}
+
+.agregarText {
+    font-size: x-large;
+}
+
+.col_pendientes {
+    width: 30%;
+}
+
+.col_calendario {
+    width: 70%;
+}
+
+.sin_pendientes {
+    width: 35%;
+    margin-left: 30%;
+}
+
+.agregar_pendiente {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.fecha_text {
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+.lista_tareas {
+    margin-top: 30px;
+}
+
+.form-check {
+    background-color: #FFF2B2;
+    max-width: 250px;
+    height: 25px;
+}
+
+#row_3 {
+    margin: 10px 0px 10px 20px;
+    align-items: top;
+    width: 100%;
+}
+
+.demo-inline-calendar-card {
+    max-width: 500px;
+    margin-left: 10%;
+}
+
+.check_input:checked {
+    background-color: #FFF2B2;
+    border-color: black;
+    accent-color: #FFF2B2;
+}
+
+.check_input {
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.form-check-label {
+    cursor: pointer;
+}

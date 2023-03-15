@@ -1,0 +1,50 @@
+<div class="row" id="row_1">
+    <div class="col-back">
+        <img class="back" src="assets/images/back.png" [routerLink]="['/lista-tareas']" routerLinkActive="router-link-active">
+    </div>
+    <div class="col-titulo">
+        <p class="categorias_titulo">Categorías</p>
+    </div>
+    <div class="col-new">
+        <img class="agregar_pendiente" src="assets/images/agregar.png" [routerLink]="['/nueva-categoria']" routerLinkActive="router-link-active">
+    </div>
+  </div>
+  <div class="linea_xl"></div>
+  <div class="container-fluid">
+    <div class="row" id="row_2">
+      <div class="col_categorias">
+        <ul>
+            <li class="list-group-item" [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active">
+                <p class="d-flex item_cat">
+                    <mat-icon class="push_pin_icon">push_pin</mat-icon>
+                    General
+                </p>
+            </li>
+            <li class="list-group-item" [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active">
+                <p class="d-flex item_cat">
+                    <mat-icon class="favorite_icon">favorite</mat-icon>
+                    Personal
+                </p>
+            </li>
+            <li class="list-group-item" [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active">
+                <p class="d-flex item_cat">
+                    <mat-icon class="work_icon">work</mat-icon>
+                    Trabajo
+                </p>
+            </li>
+            <li class="list-group-item" [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active">
+                <p class="d-flex item_cat">
+                    <mat-icon class="home_icon">home</mat-icon>
+                    Hogar
+                </p>
+            </li>
+        </ul>
+      </div>
+      <div class="col_calendario">
+        <mat-card class="demo-inline-calendar-card">
+          <mat-calendar [headerComponent]="exampleHeader" [(selected)]="selected"></mat-calendar>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

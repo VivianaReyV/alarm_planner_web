@@ -1,0 +1,229 @@
+#row_1 {
+    background-color: #B0E0E6;
+    height: 10%;
+    border-bottom: 1px solid;
+    border-color: black;
+    align-items: center;
+}
+
+.back {
+    height: 20px;
+    width: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.categorias_titulo {
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+.col-back {
+    width: 5%;
+}
+
+.col-titulo {
+    width: 15%;
+}
+
+.col-editar {
+    width: 2%;
+    cursor: pointer;
+}
+
+.col-borrar {
+    width: 2%;
+    cursor: pointer;
+}
+
+.linea_xl {
+    border-top: 1px solid black;
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#row_2 {
+    align-items: center;
+}
+
+.col_form {
+    width: 25%;
+    height: 85vh;
+    border-right: 1px solid;
+    border-color: black;
+    padding: 2%;
+    padding-top: 5%;
+}
+
+.col_calendario {
+    width: 75%;
+    height: 85vh;
+}
+
+.agregar_pendiente {
+    width: 30px;
+    height: 30px;
+}
+
+.demo-inline-calendar-card {
+    max-width: 500px;
+    margin: 0 auto;
+    top: 10%;
+}
+
+ul {
+    margin-top: 10%;
+    width: 200px;
+    border-radius: 0;
+}
+
+.item_cat {
+    align-items: end;
+    margin-left: 10px;
+}
+
+.home_icon {
+    color: #FFE666;
+    margin-right: 10px;
+}
+
+.work_icon {
+    color: #2CB5FF;
+    margin-right: 10px;
+}
+
+.favorite_icon {
+    color: #AC202D;
+    margin-right: 10px;
+}
+
+.push_pin_icon {
+    color: #93EECB;
+    margin-right: 10px;
+}
+
+.dropdown, .form-control {
+    border: 1px solid;
+    border-color: #2CB5FF;
+    border-radius: 0;
+    margin-top: 15px;
+    width: 200px;
+}
+
+input::placeholder { 
+    color: black;
+}
+
+#nueva_tarea_form {
+    top: 10%;
+    margin: 0 auto;
+}
+
+#categoria_menu {
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    width: 180px;
+    margin-left: -10px;
+}
+
+.btn-toggle-1::after {
+    display: inherit;
+    flex-direction: row;
+    align-items: end;
+    justify-content: right;
+    margin-left: 85px;
+}
+
+.crear_btn {
+    background-color: #95DAFF;
+    width: 140px;
+    margin: auto;
+    margin-top: 15%;
+    height: 40px;
+}
+
+.hora {
+    font-size: large;
+    font-weight: 800;
+    margin-left: 2%;
+}
+
+.cat {
+    font-weight: 600;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.descrptit {
+    font-weight: 600;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.descrp {
+    margin-left: 2%;
+    margin-top: -3%;
+}
+
+.image {
+    width: 45%;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.form-control-btn {
+    width: 90px;
+    background-color: transparent;
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+// Modal delete
+.modal-body {
+    margin: auto;
+}
+
+.fila1 {
+    margin: auto;
+    margin-top: 5px;
+}
+
+.warning {
+    width: 100px;
+    margin: auto;
+}
+
+.fila2 {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.fila3 {
+    margin: auto;
+}
+
+.col-cancelar {
+    width: 50%;
+}
+
+.col-aceptar {
+    width: 50%;
+}
+
+.cancelar_btn {
+    background-color: white;
+    border: 1px solid;
+    border-color: black;
+    width: 140px;
+    margin: auto;
+    margin-top: 15%;
+    height: 40px;
+}
+
+.modal {
+    margin: auto;
+    margin-top: 40%;
+}

@@ -1,0 +1,60 @@
+<!--<ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+      <li class="list-group-item">
+        <a ngbDropdownItem class="dropdown_text d-flex">
+          <mat-icon class="push_pin_icon">push_pin</mat-icon>
+          General
+        </a>
+      </li>
+      <div class="linea"></div>
+      <li class="list-group-item">
+        <a ngbDropdownItem class="dropdown_text d-flex">
+          <mat-icon class="favorite_icon">favorite</mat-icon>
+          Personal
+        </a>
+      </li>
+      <div class="linea"></div>
+      <li class="list-group-item">
+        <a ngbDropdownItem class="dropdown_text d-flex">
+          <mat-icon class="work_icon">work</mat-icon>
+          Trabajo
+        </a>
+      </li>
+      <div class="linea"></div>
+      <li class="list-group-item">
+        <a ngbDropdownItem class="dropdown_text d-flex">
+          <mat-icon class="home_icon">home</mat-icon>
+          Hogar
+        </a>
+      </li>
+    </ul>-->
+
+
+
+
+    a {
+        align-items: end;
+    }.home_icon {
+        color: #FFE666;
+        margin-right: 10px;
+    }
+    
+    .work_icon {
+        color: #2CB5FF;
+        margin-right: 10px;
+    }
+    
+    .favorite_icon {
+        color: #AC202D;
+        margin-right: 10px;
+    }
+    
+    .push_pin_icon {
+        color: #93EECB;
+        margin-right: 10px;
+    }
+    
+    .linea {
+        border-top: 1px solid black;
+        height: 2px;
+        max-width: 200px;
+      }

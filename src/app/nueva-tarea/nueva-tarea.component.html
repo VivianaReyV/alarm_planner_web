@@ -1,0 +1,87 @@
+<div class="row" id="row_1">
+    <div class="col-back">
+        <img class="back" src="assets/images/back.png" [routerLink]="['/lista-tareas']" routerLinkActive="router-link-active">
+    </div>
+    <div class="col-titulo">
+        <p class="categorias_titulo">Nueva tarea</p>
+    </div>
+  </div>
+  <div class="linea_xl"></div>
+  <div class="container-fluid">
+    <div class="row" id="row_2">
+        <div class="col_form">
+            <div class="container" id="nueva_tarea_form">
+                <div class="row justify-content-center">
+                    <input type="text" class="form-control" placeholder="Nombre tarea" aria-label="Nombre" aria-describedby="basic-addon1">
+                </div>
+                <div class="row justify-content-center">
+                    <input type="text" class="form-control" placeholder="Descripción tarea" aria-label="Descripcion" aria-describedby="basic-addon1">
+                </div>
+                <div class="row justify-content-center">
+                    <div ngbDropdown class="dropdown">
+                        <button ngbDropdownToggle class="btn btn-toggle-1" type="button" id="categoria_menu" aria-expanded="false">
+                          Categoría
+                        </button>
+                        <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+                            <li class="list-group-item">
+                                <p class="d-flex item_cat">
+                                    <mat-icon class="push_pin_icon">push_pin</mat-icon>
+                                    General
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="d-flex item_cat">
+                                    <mat-icon class="favorite_icon">favorite</mat-icon>
+                                    Personal
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="d-flex item_cat">
+                                    <mat-icon class="work_icon">work</mat-icon>
+                                    Trabajo
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="d-flex item_cat">
+                                    <mat-icon class="home_icon">home</mat-icon>
+                                    Hogar
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div ngbDropdown class="dropdown">
+                        <button ngbDropdownToggle class="btn btn-toggle-2" type="button" id="categoria_menu" aria-expanded="false">
+                          Hora
+                        </button>
+                        <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <ngb-timepicker class="timepicker" [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="input-group mb-3 i-g-f">
+                        <input type="text" class="form-control-foto" placeholder="Agregar foto" aria-label="Foto" aria-describedby="basic-addon1" disabled>
+                        <div class="input-group-prepend">
+                            <img class="camera" src="assets/images/camera.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <button class="btn crear_btn" [routerLink]="['/lista-tareas']" routerLinkActive="router-link-active">Crear</button>
+                </div>
+            </div>
+        </div>
+      <div class="col_calendario">
+        <mat-card class="demo-inline-calendar-card">
+          <mat-calendar [headerComponent]="exampleHeader" [(selected)]="selected"></mat-calendar>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+
+  

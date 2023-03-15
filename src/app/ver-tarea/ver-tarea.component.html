@@ -1,0 +1,72 @@
+<div class="row" id="row_1">
+    <div class="col-back">
+        <img class="back" src="assets/images/back.png" [routerLink]="['/lista-tareas']" routerLinkActive="router-link-active">
+    </div>
+    <div class="col-titulo">
+        <p class="categorias_titulo">Nombre de tarea</p>
+    </div>
+    <div class="col-editar">
+        <mat-icon [routerLink]="['/editar-tarea']" routerLinkActive="router-link-active">mode_edit_outline</mat-icon>
+    </div>
+    <div class="col-borrar">
+        <mat-icon (click)="openModal(template)">delete</mat-icon>
+    </div>
+  </div>
+  <div class="linea_xl"></div>
+  <div class="container-fluid">
+    <div class="row" id="row_2">
+        <div class="col_form">
+            <div class="row rw1">
+                <p class="hora">08:00 am</p>
+            </div>
+            <div class="row rw1">
+                <p class="cat">Categoría</p>
+            </div>
+            <div class="row rw1">
+                <p class="descrptit">Descripción</p>
+                <p class="descrp">Esta es la tarea número 1 que fue creada como prueba para los wireframes de la aplicación web.</p>
+            </div>
+            <div class="row rw1">
+                <img class="image" src="assets/images/image.png">
+            </div>
+            <div class="row rw1">
+                <button class="btn crear_btn" [routerLink]="['/lista-tareas']" routerLinkActive="router-link-active">
+                    <div class="input-group mb-3 i-g-f align-items-start">
+                        <input type="text" class="form-control-btn" placeholder="Realizado" aria-label="Foto" aria-describedby="basic-addon1" disabled>
+                        <div class="input-group-prepend">
+                            <mat-icon>check</mat-icon>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="col_calendario">
+            <mat-card class="demo-inline-calendar-card">
+            <mat-calendar [headerComponent]="exampleHeader" [(selected)]="selected"></mat-calendar>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<ng-template #template>
+    <div class="modal-body align-items-center">
+        <div class="row fila1">
+            <img class="warning" src="assets/images/warning.png">
+        </div>
+        <div class="row fila2">
+            <p> ¿Estás seguro que deseas eliminar la tarea? </p>
+        </div>
+        <div class="row fila3">
+            <div class="col-cancelar">
+                <button class="btn cancelar_btn" (click)="deleteModal()">Cancelar</button>
+            </div>
+            <div class="col-aceptar">
+                <button class="btn crear_btn" (click)="deleteModal()" [routerLink]="['/lista-tareas']" routerLinkActive="router-link-active">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+
+
+  

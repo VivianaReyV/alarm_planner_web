@@ -1,0 +1,71 @@
+<div class="row" id="row_1">
+    <div ngbDropdown class="dropdown">
+      <button ngbDropdownToggle class="btn" type="button" id="categoria_menu" aria-expanded="false">
+        <mat-icon class="menu_icon">menu</mat-icon>
+      </button>
+      <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+        <li class="list-group-item">
+          <a ngbDropdownItem class="dropdown_text d-flex" [routerLink]="['/categorias']" routerLinkActive="router-link-active">
+            Categorías
+          </a>
+        </li>
+        <div class="linea"></div>
+        <li class="list-group-item">
+          <a ngbDropdownItem class="dropdown_text d-flex">
+            Opción X
+          </a>
+        </li>
+        <div class="linea"></div>
+        <li class="list-group-item">
+          <a ngbDropdownItem class="dropdown_text d-flex">
+            Opción Y
+          </a>
+        </li>
+      </ul>
+    </div>
+    <img class="nombre_app" src="assets/images/nombre_app.png">
+  </div>
+  <div class="linea_xl"></div>
+  <div class="container-fluid">
+    <div class="row" id="row_2">
+      <div class="col-add">
+        <img class="agregar_pendiente" src="assets/images/agregar.png" [routerLink]="['/nueva-tarea']" routerLinkActive="router-link-active">
+      </div>
+      <div class="col-add-text">
+        <p class="agregarText">Agregar</p>
+      </div>
+    </div>
+    <div class="row" id="row_3">
+      <div class="col_pendientes">
+        <p class="fecha_text">Fecha: {{curDate | date:'yyyy-MM-dd'}}</p>
+        <div class="lista_tareas">
+            <div class="form-check">
+                <label class="form-check-label" for="flexCheckDefault">
+                  <input class="check_input" type="checkbox" value="" id="flexCheckDefault" [routerLink]="['/ver-tarea']" routerLinkActive="router-link-active">
+                    Nombre nueva tarea 1
+                </label>
+              </div>
+              <div class="linea"></div>
+              <div class="form-check">
+                <label class="form-check-label" for="flexCheckChecked" [routerLink]="['/ver-tarea']" routerLinkActive="router-link-active">
+                <input class="check_input" type="checkbox" value="" id="flexCheckChecked">
+                    Nombre nueva tarea 2
+                </label>
+              </div>
+              <div class="linea"></div>
+              <div class="form-check">
+                <label class="form-check-label" for="flexCheckChecked" [routerLink]="['/ver-tarea']" routerLinkActive="router-link-active">
+                <input class="check_input" type="checkbox" value="" id="flexCheckChecked">
+                    Nombre nueva tarea 3
+                </label>
+            </div>
+        </div>
+      </div>
+      <div class="col_calendario">
+        <mat-card class="demo-inline-calendar-card">
+          <mat-calendar [headerComponent]="exampleHeader" [(selected)]="selected"></mat-calendar>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
